@@ -1,2 +1,2 @@
-# ai1-lab
+# Aplikacje internetowe
 # ai1-lab
