@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle z widoku mapy</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Puzzle z mojej lokalizacji</h1>
+
+  <div class="controls">
+    <button id="locBtn">Moja lokalizacja</button>
+    <button id="saveBtn" disabled title="Najpierw zezwól i pobierz swoją lokalizację">Pobierz mapę</button>
+    <button id="clearBtn" title="Wyczyść planszę">Wyczyść planszę</button>
+    <span id="coords" aria-live="polite"></span>
+  </div>
+  <div id="map" aria-label="Mapa OpenStreetMap"></div>
+  <canvas id="mapCanvas" width="400" height="400" hidden></canvas>
+  <section id="puzzleBoard">
+    <h2>Stół z puzzlami</h2>
+    <div class="board">
+      <div id="slots" class="grid" aria-label="Siatka na puzzle"></div>
+      <div class="divider"></div>
+      <div id="tray" class="tray" aria-label="Pojemnik na puzzle (losowe)"></div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja lista To-Do</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Prosta lista To-Do w czystym JS, DOM i CSS">
+</head>
+<body>
+  <h1>Moja lista To-Do</h1>
+
+  <div id="search">
+    <input type="text" id="searchInput" placeholder="Szukaj zadania..." aria-label="Szukaj zadania">
+  </div>
+
+  <ul id="taskList" aria-live="polite"></ul>
+
+  <div id="add">
+    <input type="text" id="taskInput" placeholder="Nowe zadanie" maxlength="255" aria-label="Treść zadania">
+    <input type="datetime-local" id="taskDate" aria-label="Data i czas (opcjonalnie)">
+    <button id="addButton" aria-label="Dodaj zadanie">Dodaj</button>
+  </div>
+
+  <script src="script.js" defer></script>
+  
+</body>
+</html>

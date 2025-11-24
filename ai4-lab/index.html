@@ -1,0 +1,43 @@
+<!-- index.html – prosty klient OpenWeatherMap -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - LAB D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-container">
+    <header class="app-header">
+      <h1>Weather App - LAB D</h1>
+      <p class="subtitle">Aktualna pogoda i prognoza 5-dniowa (OpenWeatherMap)</p>
+    </header>
+
+    <section class="search-section">
+      <label for="city-input" class="sr-only">Nazwa miasta</label>
+      <input id="city-input" type="text" placeholder="Wpisz nazwę miasta" autocomplete="off">
+      <button id="search-button" type="button">Pogoda</button>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="results">
+      <div class="panel">
+        <h2>Aktualna pogoda</h2>
+        <div id="current-weather" class="current-weather">
+          <p class="placeholder">Wyniki pojawią się tutaj po wyszukaniu.</p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Prognoza 5-dniowa</h2>
+        <div id="forecast" class="forecast-list">
+          <p class="placeholder">Brak danych - wyszukaj miasto.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
